@@ -1,0 +1,23 @@
+*What is React Native*
+
+React Native is an open-source framework for building native Android and iOS applications using React.
+
+It uses JavaScript to access platform-specific APIs (such as camera and push notifications).
+
+It uses React components to define the appearance and behaviour of your user interface.
+
+React itself is a library designed for building user interfaces.
+
+Whilst react-dom is used for websites, react-native is used for mobile apps.
+
+
+*Why React Native?*
+
+Traditionally building iOS apps requires Swift or Objective-C, and building an Android apps requires Java or Kotlin.
+
+This meant that you would typically need to develop two separate apps - one for iOS and one for Android to cater to everyone.
+
+With React Native, you can create one single app which works seamlessly with both platforms.
+
+This also puts React Native in high demand in the job market; rather than assembling different teams of iOS and Android developers, businesses can opt for a single team proficient in React Native, saving time and costs. Furthermore, if the team is well-versed in React, their expertise can extend to web app development as well.
+
