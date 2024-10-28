@@ -1,0 +1,7 @@
+Component for displaying text.
+
+It supports nesting, styling and touch handling.
+
+Depending on the target platform, React Native will will translate this component to either a UITextView (iOS), a TextView (Android), or a 'p' (Web).
+
+All text must be wrapped inside the <Text></Text> component. Directly placing text inside a view will render an error.
