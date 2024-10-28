@@ -5,3 +5,19 @@ It functions as a container that supports layouts using flexbox, styling, touch 
 In web development terms, the View component can be compared to the '<div>' tag.
 
 The View component is typically nested inside other views and can have zero or more children of any type.
+
+By default, the View component only occupies the space taken up by its children.
+
+Therefore the following app.js file will not render anything on the screen because there are no children within the view component:
+
+`import { View } from 'react-native';
+
+export default function App(){
+  return <View style={{ backgroundColor: "plum" }}></View>;
+}`  
+
+However, if I update the view component to have the additional style 'flex:1' `<View style={{ flex:1, backgroundColor: "plum" }}></View>;`, the view will flexibly expand and take up all the available space on the screen
+
+The View component can nest other views within it.
+
+The View component is an essential core component in React Native serving as a building block for creating user interfaces. It acts as a container that supports layout and styling.
