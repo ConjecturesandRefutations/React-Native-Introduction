@@ -21,3 +21,5 @@ However, if I update the view component to have the additional style 'flex:1' `<
 The View component can nest other views within it.
 
 The View component is an essential core component in React Native serving as a building block for creating user interfaces. It acts as a container that supports layout and styling.
+
+Although a View component is similar to a div tag, it does not scroll automatically. React Native provides the ScrollView specifically for this purpose.

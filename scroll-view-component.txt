@@ -1,0 +1,5 @@
+Although a View component is similar to a div tag, it does not scroll automatically. React Native provides the ScrollView specifically for this purpose.
+
+ScrollComponent wraps the platform-specific scrolling functionality.
+
+ScrollViews require a bounded height to function properly (this essentially means that the ScrollView component should be nested within a View).
