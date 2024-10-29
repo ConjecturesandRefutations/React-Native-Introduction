@@ -1,0 +1,21 @@
+The Image Component enables you to display various types of images, including
+
+Static images
+Network images
+Images from the local disk, such as the camera roll
+
+React Native seamlessly translates the Image component to platform-specific counterparts:
+
+UIImageView for iOS
+ImageView for Android
+'img' for the web
+
+Specifying width and height is mandatory for Network images
+
+For static images, React Native can infer the dimensions from the file data.
+
+To render an image, import the image component from React Native and specify the source prop.
+
+For remote (Network) images, ensure the use the uri option within the source
+
+To render a background image, use the ImageBackground component, nesting the desired content inside

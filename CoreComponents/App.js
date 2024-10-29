@@ -1,4 +1,5 @@
-import { View, Text } from 'react-native';
+import { View, Text, Image, ImageBackground } from 'react-native';
+const logoImg = require("./assets/adaptive-icon.png")
 
 export default function App(){
   return <View style={{ flex: 1, backgroundColor: "plum" }}>
@@ -11,5 +12,11 @@ export default function App(){
            is Nested
         </Text>
       </View>
+
+      {/* <Image source={logoImg} style="width: 300, height: 300"/>
+      <Image source={{ uri: "https://picsum.photos/300" }} style="width: 300, height: 300"/> */}
+      <ImageBackground source={logoImg} style={{ flex: 1 }}>
+          <Text>IMAGE TEXT</Text>
+      </ImageBackground>
   </View>;
 }
