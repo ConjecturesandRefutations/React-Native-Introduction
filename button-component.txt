@@ -1,0 +1,17 @@
+Allows users to trigger actions (similar to button component in HTML).
+
+The button component has platform-specific rendering for iOS and Android.
+
+Unlike the HTML button, the RN button is a self-closing tag. There is no inner-text or closing tag.
+
+To specify the button text, we use a prop called 'title'.
+
+In web-development with React, we listen to the onClick event using the onClick prop.
+
+Similarly, in RN, the button component provides an onPress prop.
+
+The color prop allows easy customisation of the button color.
+
+There is also the 'disabled' prop. By adding this, we set it to true by default. This will disable the buttons styles and prevent it from functioning (no press events will be triggered).
+
+Usually it is better to manage a state variable to control the disabled prop value instead of directly assigning the value as true or false.
