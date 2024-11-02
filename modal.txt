@@ -1,0 +1,19 @@
+A modal is screen that overlays the app content to provide important information or prompt the user for a decision.
+
+By default, a modal is always visible. You need to control its visibility based on interaction. To achieve this, we require a state variable (e.g. useState hook imported from React).
+
+onRequestClose is there to provide an alternative way to handle closing behavior when an external trigger, like the back button or a hardware control, is used (as opposed to a button or pressable within the application).
+
+The animation type is set to 'none' by default. The prop accepts two other values.
+
+If we set it to 'slide', the modal will slide in from (and out from) the bottom.
+
+If you set the value to 'fade', the modal will fade into (and out of) view.
+
+There is a prop called 'presentationStyle' which is set to fullscreen by default. 
+
+You can change this to either 'formSheet' or 'pageSheet' to alter the appearance.
+
+formSheet is narrow, whilst pageSheet is wider. 
+
+*presentationStyle* only affects iOS (i.e. not Android).
