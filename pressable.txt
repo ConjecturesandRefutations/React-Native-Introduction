@@ -1,0 +1,15 @@
+Of course you can use buttons to trigger actions. But there are times when we need to trigger actions on the press of other elements, such as text and images.
+
+React Native provides a component called 'pressable' to do this.
+
+Pressable is wrapper component that detects various stages of press interactions on its defined children.
+
+Essentially it is a way to create a custom button
+
+In addition to onPress, the pressable component supports several other events it can listen to:
+
+onPressIn is called when a press is activated. 
+
+onLongPress is triggered when a press is held for longer than 500 milliseconds.
+
+onPressOut is called when the press gesture is deactivated.
