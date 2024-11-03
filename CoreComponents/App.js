@@ -1,13 +1,17 @@
 import { useState } from 'react';
-import { View, Button, ScrollView, Text, Image, ImageBackground, Pressable, Modal } from 'react-native';
+import { View, Button, ScrollView, Text, Image, ImageBackground, Pressable, Modal, StatusBar } from 'react-native';
 const logoImg = require("./assets/adaptive-icon.png")
 
 export default function App(){
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isBarVisible, setIsBarInvisible] = useState(false);
   return (
 
   <View style={{ flex: 1, backgroundColor: "#F4F5F4", padding:60 }}>
+    <StatusBar backgroundColor="#FEC1CB" barStyle={'dark-content'} hidden={isBarVisible}/>
     <Button title='Show Modal' onPress={ ()=> setIsModalVisible(true)} color="#017AFF" />
+    <Button title='Hide Status Bar' onPress={ ()=> setIsBarInvisible(true)} color="#FEC1CB" />
+    <Button title='Show Status Bar' onPress={ ()=> setIsBarInvisible(false)} color="green" />
       <Text>PLUG</Text>
       <Pressable onPress={ ()=> console.log('Image Pressed')}>
         <Image source={logoImg} style={{width: 300, height: 300}}/>

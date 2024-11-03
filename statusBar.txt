@@ -1,0 +1,13 @@
+The StatusBar component allows you to control the application's status bar.
+
+The status bar is typically located at the top of the screen. It displays the current time, Wi-Fi and network information, battery level and other status icons.
+
+You can change the background colour of the status bar using backgroundColor. This prop is specific to Android.
+
+We can adjust the text colour on both platforms. 
+
+The prop to adjust the text colour is called barStyle. Its default value is the string 'default'. This corresponds to dark text on iOS and light text on android. 
+
+barStyle can be changed to 'dark-content' and 'light-content' to change to black or white text respectively.
+
+You can use the 'hidden' prop to hide the status bar.
