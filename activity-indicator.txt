@@ -1,0 +1,9 @@
+The activity indicator component displays a circular loading indicator.
+
+It is used to inform the user about the status of ongoing processes, such as loading an app, submitting a form, or saving updates.
+
+There are 3 important props for this component:
+
+1. size: set to small by default. Can be changed to large.
+2. color: by default it uses the sytem accent colour for Android and a shade of gray for iOS. We can customise it as desired.
+3. animating: controls the visibility of the component. By default it is set to 'true'. It can be set to 'false'.

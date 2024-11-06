@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, Button, ScrollView, Text, Image, ImageBackground, Pressable, Modal, StatusBar } from 'react-native';
+import { View, Button, ScrollView, Text, Image, ImageBackground, Pressable, Modal, StatusBar, ActivityIndicator } from 'react-native';
 const logoImg = require("./assets/adaptive-icon.png")
 
 export default function App(){
@@ -8,23 +8,7 @@ export default function App(){
   return (
 
   <View style={{ flex: 1, backgroundColor: "#F4F5F4", padding:60 }}>
-    <StatusBar backgroundColor="#FEC1CB" barStyle={'dark-content'} hidden={isBarVisible}/>
-    <Button title='Show Modal' onPress={ ()=> setIsModalVisible(true)} color="#017AFF" />
-    <Button title='Hide Status Bar' onPress={ ()=> setIsBarInvisible(true)} color="#FEC1CB" />
-    <Button title='Show Status Bar' onPress={ ()=> setIsBarInvisible(false)} color="green" />
-      <Text>PLUG</Text>
-      <Pressable onPress={ ()=> console.log('Image Pressed')}>
-        <Image source={logoImg} style={{width: 300, height: 300}}/>
-      </Pressable>
-      <Modal visible={isModalVisible} 
-      onRequestClose={()=>setIsModalVisible(false)} 
-      animationType='slide' 
-      presentationStyle="pageSheet">
-        <View style={{ flex: 1, backgroundColor: "pink", padding:60 }}>
-            <Text>Modal Content</Text>
-            <Button title='close' onPress={ ()=> setIsModalVisible(false)} color={'red'}></Button>
-        </View>
-      </Modal>
+      <ActivityIndicator size="large" color="midnightblue" animating={false}/>
   </View>
   );
 }
@@ -64,3 +48,23 @@ export default function App(){
 <Image source={logoImg} style={{width: 300, height: 300}}/>
 </ScrollView>
  */}
+
+/*  <View style={{ flex: 1, backgroundColor: "#F4F5F4", padding:60 }}>
+ <StatusBar backgroundColor="#FEC1CB" barStyle={'dark-content'} hidden={isBarVisible}/>
+ <Button title='Show Modal' onPress={ ()=> setIsModalVisible(true)} color="#017AFF" />
+ <Button title='Hide Status Bar' onPress={ ()=> setIsBarInvisible(true)} color="#FEC1CB" />
+ <Button title='Show Status Bar' onPress={ ()=> setIsBarInvisible(false)} color="green" />
+   <Text>PLUG</Text>
+   <Pressable onPress={ ()=> console.log('Image Pressed')}>
+     <Image source={logoImg} style={{width: 300, height: 300}}/>
+   </Pressable>
+   <Modal visible={isModalVisible} 
+   onRequestClose={()=>setIsModalVisible(false)} 
+   animationType='slide' 
+   presentationStyle="pageSheet">
+     <View style={{ flex: 1, backgroundColor: "pink", padding:60 }}>
+         <Text>Modal Content</Text>
+         <Button title='close' onPress={ ()=> setIsModalVisible(false)} color={'red'}></Button>
+     </View>
+   </Modal>
+</View> */
