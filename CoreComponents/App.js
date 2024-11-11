@@ -3,16 +3,19 @@ import { View, Button, ScrollView, Text, Image, ImageBackground, Pressable, Moda
 const logoImg = require("./assets/adaptive-icon.png")
 
 export default function App(){
-  const [isModalVisible, setIsModalVisible] = useState(false);
-  const [isBarVisible, setIsBarInvisible] = useState(false);
-  return (
 
-  <View style={{ flex: 1, backgroundColor: "#F4F5F4", padding:60 }}>
-      <ActivityIndicator size="large" color="midnightblue" animating={false}/>
-  </View>
+  return (
+    <View style={{ flex: 1, backgroundColor: "#F4F5F4", padding:60 }}>
+      <ActivityIndicator size="large" color="midnightblue" animating={true}/>
+    </View>
   );
 }
 
+
+/* 
+<View style={{ flex: 1, backgroundColor: "#F4F5F4", padding:60 }}>
+<ActivityIndicator size="large" color="midnightblue" animating={true}/>
+</View> */
 
 {/* <View style={{ width:200, height:200, backgroundColor: "lightblue", justifyContent:"center", alignItems:"center" }}>
 <Text>Text One</Text>
@@ -49,7 +52,10 @@ export default function App(){
 </ScrollView>
  */}
 
-/*  <View style={{ flex: 1, backgroundColor: "#F4F5F4", padding:60 }}>
+/*  
+const [isModalVisible, setIsModalVisible] = useState(true);
+const [isBarVisible, setIsBarInvisible] = useState(false);
+<View style={{ flex: 1, backgroundColor: "#F4F5F4", padding:60 }}>
  <StatusBar backgroundColor="#FEC1CB" barStyle={'dark-content'} hidden={isBarVisible}/>
  <Button title='Show Modal' onPress={ ()=> setIsModalVisible(true)} color="#017AFF" />
  <Button title='Hide Status Bar' onPress={ ()=> setIsBarInvisible(true)} color="#FEC1CB" />
