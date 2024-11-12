@@ -1,12 +1,24 @@
 import { useState } from 'react';
-import { View, Button, ScrollView, Text, Image, ImageBackground, Pressable, Modal, StatusBar, ActivityIndicator } from 'react-native';
+import { View, Button, ScrollView, Text, Image, ImageBackground, Pressable, Modal, StatusBar, ActivityIndicator, Alert } from 'react-native';
 const logoImg = require("./assets/adaptive-icon.png")
 
 export default function App(){
 
   return (
     <View style={{ flex: 1, backgroundColor: "#F4F5F4", padding:60 }}>
-      <ActivityIndicator size="large" color="midnightblue" animating={true}/>
+      <Button title='alert' onPress={()=>Alert.alert("Invalid Data!")}></Button>
+      <Button title='alert 2' onPress={()=>Alert.alert("Invalid Data!", "DOB Incorrect")}></Button>
+      <Button title='alert 3' 
+      onPress={()=>Alert.alert("Invalid Data!", "DOB Incorrect", [
+        {
+          text:cancel,
+          onPress: () => console.log('cancel pressed')
+        },
+        {
+          text:OK,
+          onPress: () => console.log('ok pressed')
+        }
+        ])}></Button>
     </View>
   );
 }

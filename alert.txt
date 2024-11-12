@@ -1,1 +1,7 @@
 Technically, the alert component serves more as a an API than a core component.
+
+Rather than rendering it as part of JSX, you invoke methods that generate UI elements.
+
+When using alert, you can launch an alert dialog with a specified title and method.
+
+Additionally you have the option to include a buttons.
