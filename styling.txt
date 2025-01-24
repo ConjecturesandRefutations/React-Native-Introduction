@@ -1,0 +1,15 @@
+React Native does not use CSS for styling.
+
+Instead you style your app using JavaScript.
+
+The naming conventions for styles and their values are similar to CSS on the web, but with a slight modification.
+
+Names are written in camelCase (rather than kebab-case), such as backgroundColor rather than background-color.
+
+There are two approaches to styling a React Native component:
+
+The first approach is using inline styles with the style prop, which is accepted by most the core components. We have seen this in our discussion of the core components, where we specified a plain JavaScript object as the value for the style prop.
+
+The second approach invoved utilising the StyleSheet API provided by React Native. This API allows you to define multiple styles in one place using the create method.
+
+We will primarily focus on the stylesheet API, exploring how to style various Core Components, and understanding the nuances of applying specific styles across iOS and Android platforms.
