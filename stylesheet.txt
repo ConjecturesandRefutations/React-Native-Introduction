@@ -1,0 +1,11 @@
+The stylesheet API is the recommended approach, as it promotes writing organised, easy to read and maintainable code.
+
+By moving styles away from the render function, you make the code easier to read and understand.
+
+Naming the styles also gives meaning to the low-level components in the render function.
+
+Organising code in this manner also makes the code reusable and easier to maintain. It saves having to update each inline style when a global change needs to be made.
+
+You can also create a separate global styles file and export the styles object. You can then use it in any file throughout your code base.
+
+If you create a style object without using the stylesheet API, you won't have access to autocomplete suggestions.
