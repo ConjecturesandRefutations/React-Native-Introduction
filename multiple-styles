@@ -1,0 +1,2 @@
+You can specify multiple styles using the array syntax [].
+When merging styles, the value from the last item in the array takes precedence.
