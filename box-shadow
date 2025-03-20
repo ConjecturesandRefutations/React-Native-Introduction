@@ -1,0 +1,1 @@
+Shadow properties do not work in android, and you have to rely on the elevation property.
