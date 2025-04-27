@@ -20,3 +20,15 @@ The immediate child components are the flex itesms.
     <View>Item 2</View>
     <View>Item 3</View>
 </View>
+
+In the sample UI above, the parent view acts as the flex container, and all the children views are flex items.
+
+When working with flexbox, we encouter two axes:
+
+1. Main axis
+2. Cross axis
+
+By default in CSS, the main axis runs from left to right, and the cross-axis is perpendicular to it.
+
+However, in React Native, it is the opposite: the main axis runs from top to bottom and the cross-axis runs from left to right.
+
