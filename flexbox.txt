@@ -1,0 +1,22 @@
+At the core of layout design with React Native is flexbox.
+
+Flexbox is a powerful one-dimensional layout model used to arrange elements within a container.
+
+With flexbox, you have the freedom to arrange items either horizontally or vertically.
+
+You can easily the spacing and aligment of items within the container.
+
+Flexbox consists of two main entities:
+
+1. The flex container
+2. The flex items
+
+The parent container (usually a View component) is referred to as the flex container.
+
+The immediate child components are the flex itesms.
+
+<View>
+    <View>Item 1</View>
+    <View>Item 2</View>
+    <View>Item 3</View>
+</View>
