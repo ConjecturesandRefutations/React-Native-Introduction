@@ -1,0 +1,9 @@
+Unlike in HTML, there is limited inheritance of styles.
+
+When working with styles in React Native, there is no inheritance of styles from a View component to a text component.
+
+To set a color to the text component, you need to apply the color to the text component directly.
+
+RN still supports inheritance within nested text components. 
+
+Inheritance from View to Text does not work, but inheritance from Text to Text does.
